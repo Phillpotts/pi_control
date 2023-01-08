@@ -73,7 +73,7 @@ export function getLogs(options: Command_logs, conversation_id: string): Promise
         fs.readFile(options.file, (err, data) => {
             const res: Logs_Result = {
                 error: err,
-                logs: data.toString().split('/n')
+                logs: data.toString().split('\n')
             };
             resolver(res);
         });
