@@ -1,0 +1,23 @@
+[2023-01-08T16:32:06.822Z][41e725a38aedee8ce1fa6a14b68d8cb69d18a4c60da] SERVER: (200) /shutdown
+[2023-01-08T16:32:11.799Z][41ec133432673345f08680d07da0f8c9fbc137cfe4a] SERVER: (200) /shutdown/cancel
+[2023-01-08T16:34:42.496Z][N/A] SERVER: Server running on function() {
+  if (this._handle && this._handle.getsockname) {
+    const out = {};
+    const err = this._handle.getsockname(out);
+    if (err) {
+      throw errnoException(err, 'address');
+    }
+    return out;
+  } else if (this._pipeName) {
+    return this._pipeName;
+  }
+  return null;
+}
+[2023-01-08T16:34:58.161Z][N/A] SERVER: Server running on [object Object]
+[2023-01-08T16:35:11.690Z][N/A] SERVER: Server running on [object Object]
+[2023-01-08T16:39:13.387Z][N/A] SERVER: Server running on http://:::3000
+[2023-01-08T16:39:47.296Z][N/A] SERVER: Server running on http://:::3000
+[2023-01-08T16:40:52.345Z][N/A] SERVER: Running on http://:::3000
+[2023-01-08T16:45:31.140Z][N/A] SERVER: Running on http://:::3001
+[2023-01-08T16:45:43.740Z][N/A] SERVER: Running on http://:::3000
+[2023-01-08T16:48:09.160Z][N/A] SERVER: Running on http://:::3000
